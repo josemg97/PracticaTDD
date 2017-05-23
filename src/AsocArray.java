@@ -24,16 +24,23 @@ public class AsocArray {
 
 
 
-		public void put(String string, String string2) {
-			// TODO Auto-generated method stub
-			
-		}
+		public void put(String clave, String valor){
+		    primero = new Nodo();
+		    primero.clave = clave;
+		    primero.valor = valor;
+		    primero.siguiente = null;
+		    tam ++;
+		  }
 
 
 
-		public Object get(String string) {
-			// TODO Auto-generated method stub
-			return null;
-		}
+		  public String get(String clave){
+			    Nodo actual = primero;
+			    String val = "";
+			    if(actual!= null && actual.clave.equals(clave)){
+			      val = actual.valor;
+			    }
+			    return val;
+			  }
 
 }
