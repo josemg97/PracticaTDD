@@ -71,6 +71,9 @@ public class AsocArray {
 		      }
 		      actual = actual.siguiente;
 		    }
+		    if(!encontrado){
+		    	throw new UndefinedKeyException();
+		    }
 		    return val;
 		  }
 
