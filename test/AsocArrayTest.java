@@ -34,7 +34,7 @@ public class AsocArrayTest {
 	    array.put("maria", "perez");
 	    array.put("maria", "dominguez");
 	    assertEquals("martin", array.get("paco"));
-	    assertEquals("perez",array.get("maria"));
+	    assertEquals("dominguez",array.get("maria"));
 	    assertEquals(2,array.size());
 		
 	}

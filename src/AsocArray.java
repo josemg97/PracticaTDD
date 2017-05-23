@@ -37,30 +37,37 @@ public class AsocArray {
 		      
 		      Nodo actual = primero;
 		      Nodo sig = actual.siguiente;
+		      boolean encontrado = false;
 		      
-		      while (sig != null) {
+		      while (sig != null && !encontrado) {
 		        actual = actual.siguiente;
 		        sig = actual.siguiente;
+		        if(actual.clave.equals(clave)){
+		          actual.valor = valor;
+		          encontrado = true;
+		        }
 		      }
 		      
-		       Nodo n = new Nodo();
-		       n.clave = clave;
-		       n.valor = valor;
-		       n.siguiente = null;
-		       tam ++;
-		       actual.siguiente = n;
-		       
-		      tam++;
+		      if(!encontrado){
+		         Nodo n = new Nodo();
+		         n.clave = clave;
+		         n.valor = valor;
+		         n.siguiente = null;
+		         actual.siguiente = n;
+		         tam ++;
+		      }
 		    }
 
 		  }
 		  
 		  public String get(String clave){
 		    Nodo actual = primero;
+		    boolean encontrado = false;
 		    String val = "";
-		    while(actual != null){
+		    while(actual != null && !encontrado){
 		      if(actual!= null && actual.clave.equals(clave)){
 		        val = actual.valor;
+		        encontrado = true;
 		      }
 		      actual = actual.siguiente;
 		    }
