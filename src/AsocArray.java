@@ -79,9 +79,20 @@ public class AsocArray {
 
 
 
-		public Object getOrElse(String string, String string2) {
-			// TODO Auto-generated method stub
-			return null;
+		public String getOrElse(String clave, String valorPorDefecto) {
+		    Nodo actual = primero;
+		    boolean encontrado = false;
+		    String val = "";
+		    while(actual != null && !encontrado){
+		      if(actual!= null && actual.clave.equals(clave)){
+		        val = actual.valor;
+		        encontrado = true;
+		      }
+		      actual = actual.siguiente;
+		    }
+		    
+		    return val;
+			
 		}
 
 }
