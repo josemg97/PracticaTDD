@@ -77,4 +77,11 @@ public class AsocArray {
 		    return val;
 		  }
 
+
+
+		public Object getOrElse(String string, String string2) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
 }
