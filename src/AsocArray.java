@@ -99,9 +99,15 @@ public class AsocArray {
 
 
 
-		public Object containsKey(String string) {
-			// TODO Auto-generated method stub
-			return null;
+		public boolean containsKey(String clave) {
+		    Nodo actual = primero;
+			boolean encontrado = false;
+			while(actual != null && !encontrado){
+				if(actual.clave.equals(clave)){
+			        encontrado=true;
+			}
 		}
+			return encontrado;
 
+}
 }
