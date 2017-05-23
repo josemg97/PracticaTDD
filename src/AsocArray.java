@@ -10,14 +10,30 @@ public class AsocArray {
 		    private Nodo primero;
 		    private int tam;
 		 
-		    public AsocArray() {
-		    	tam=0;
-		        this.primero = null;
+		public AsocArray() {
+		    tam=0;
+		    this.primero = null;
 		     }
 		    
-	public int size() {
+		    
+		    
+		public int size() {
 		// TODO Auto-generated method stub
 		return tam;
 	}
+
+
+
+		public void put(String string, String string2) {
+			// TODO Auto-generated method stub
+			
+		}
+
+
+
+		public Object get(String string) {
+			// TODO Auto-generated method stub
+			return null;
+		}
 
 }
