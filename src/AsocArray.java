@@ -90,7 +90,9 @@ public class AsocArray {
 		      }
 		      actual = actual.siguiente;
 		    }
-		    
+		    if(!encontrado){
+		    	val=valorPorDefecto;
+		    }
 		    return val;
 			
 		}
