@@ -113,8 +113,16 @@ public class AsocArray {
 
 
 
-		public Object remove(String string) {
-			// TODO Auto-generated method stub
-			return null;
-		}
+		public boolean remove(String clave) {
+		    Nodo actual = primero;
+		    Nodo ant = null;
+		    
+		    if(actual != null){
+		      if (ant == null){
+		        primero = primero.siguiente;
+		      }
+		    }
+		    tam --;
+		    return true;
+		  }
 }
