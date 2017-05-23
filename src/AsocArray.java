@@ -97,4 +97,11 @@ public class AsocArray {
 			
 		}
 
+
+
+		public Object containsKey(String string) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
 }

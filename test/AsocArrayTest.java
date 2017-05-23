@@ -66,4 +66,10 @@ public class AsocArrayTest {
 		
 	}
 	
+	@Test
+	public void FuncioncontainsKeyDevuelveTrueSiEncuentraClave(){
+		array.put("paco", "martin");
+		assertEquals("True", array.containsKey("paco"));
+	}
+	
 }
