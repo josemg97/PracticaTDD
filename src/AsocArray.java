@@ -110,4 +110,11 @@ public class AsocArray {
 			return encontrado;
 
 }
+
+
+
+		public Object remove(String string) {
+			// TODO Auto-generated method stub
+			return null;
+		}
 }

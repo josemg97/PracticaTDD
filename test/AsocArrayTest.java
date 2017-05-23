@@ -72,4 +72,11 @@ public class AsocArrayTest {
 		assertEquals(true, array.containsKey("paco"));
 	}
 	
+	@Test
+	public void BorrarNodoDelArrayConUnElementoDevuelveTrue(){
+		array.put("paco", "martin");
+		assertEquals(true, array.remove("paco"));
+		assertEquals(0,array.size());
+	}
+	
 }
