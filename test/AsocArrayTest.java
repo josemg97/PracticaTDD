@@ -1,5 +1,7 @@
 import static org.junit.Assert.*;
 
+import java.lang.reflect.Array;
+
 import org.junit.Test;
 
 public class AsocArrayTest {
@@ -37,6 +39,12 @@ public class AsocArrayTest {
 	    assertEquals("dominguez",array.get("maria"));
 	    assertEquals(2,array.size());
 		
+	}
+	
+	@Test(expected=UndefinedKeyException.class)
+	public void NoSeEncuentraClaveySeEleveUnaExcepcion(){
+		AsocArray array = new AsocArray();
+		array.get("paco");
 	}
 	
 }
