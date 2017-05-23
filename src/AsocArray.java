@@ -117,12 +117,19 @@ public class AsocArray {
 		    Nodo actual = primero;
 		    Nodo ant = null;
 		    
-		    if(actual != null){
-		      if (ant == null){
+		    while(actual!= null && actual.clave.equals(clave)){
+		      ant = actual;
+		      actual = actual.siguiente;
+		    }
+		    if(actual!=null){
+		      
+		      if(ant == null){
 		        primero = primero.siguiente;
+		      }else{
+		        ant.siguiente = actual.siguiente;
 		      }
 		    }
-		    tam --;
-		    return true;
+		    tam--;
+		    return true;  
 		  }
 }
