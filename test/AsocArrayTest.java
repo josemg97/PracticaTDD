@@ -59,6 +59,11 @@ public class AsocArrayTest {
 	    assertEquals("martin", array.getOrElse("paco","no hay valor"));
 	}
 	
-	
+	@Test
+	public void FuncionGetOrElseDevuelveValorPorDefectoSiNoEncuentraClave(){
+		array.put("paco", "martin");
+	    assertEquals("no hay valor", array.getOrElse("pedro","no hay valor"));
+		
+	}
 	
 }
